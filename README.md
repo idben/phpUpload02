@@ -26,4 +26,4 @@ git clone git@github.com:idben/phpUpload01.git .
 ![結果圖示](https://github.com/idben/phpUpload02/blob/main/images/info2.png)
 
 ## 示範網址
-[https://idben.tw-no1.com/iSpan/phpTest/upload02/](https://idben.tw-no1.com/iSpan/phpTest/upload02/save.php)
+[https://idben.tw-no1.com/iSpan/phpTest/upload02/](https://idben.tw-no1.com/iSpan/phpTest/upload02/)
