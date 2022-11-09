@@ -1,0 +1,140 @@
+h1{
+  text-align: center;
+  color: rgb(241, 10, 114);
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+form{
+  font-size: 18px;
+  width: 800px;
+}
+form .row{
+  margin-bottom: 5px;
+  background-color: rgb(238, 192, 8);
+  padding: 5px;
+  border-radius: 5px;
+}
+form .row2{
+  margin-bottom: 5px;
+  background-color: rgba(238, 192, 8, 0);
+  padding: 5px;
+  text-align: right;
+}
+form label{
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+  text-align: right;
+  color: rgb(109, 3, 3);
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+form input{
+  font-size: 18px;
+  width: calc(100% - 150px - 18px);
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.7);
+}
+form input:focus{
+  outline: 2px solid rgb(180, 3, 118);
+}
+form input::placeholder {
+  font-size: 14px;
+  opacity: .5;
+  color: red;
+}
+form textarea{
+  font-size: 18px;
+  width: calc(100% - 150px - 18px);
+  height: 100px;
+  padding: 3px;
+  border: none;
+  background-color: rgba(255,255,255,0.7);
+}
+form textarea:focus{
+  outline: 2px solid rgb(180, 3, 118);
+}
+form textarea::placeholder {
+  font-size: 14px;
+  opacity: .5;
+  color: red;
+}
+form .down{
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+form .down .tag{
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: rgb(77, 143, 16);
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  margin-right: 2px;
+}
+form .down .tag:hover::after{
+  position: absolute;
+  width: 100px;
+  padding: 3px;
+  text-align: center;
+  top: -30px;
+  right: calc(0 - 100% - 30px);
+  content: "點擊後刪除標籤";
+  font-size: 12px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+}
+.iconBtn{
+  display: inline-block;
+  font-size: 18px;
+  width: 120px;
+  border: none;
+  background-color: rgb(230, 113, 113);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.iconBtn:hover{
+  background-color: rgb(224, 47, 47);
+  color: #fff;
+}
+.iconBtn2{
+  background-color: rgb(243, 82, 197);
+}
+.iconBtn2:hover{
+  background-color: rgb(221, 16, 163);
+}
+.input2{
+  width: calc(100% - 150px - 18px - 120px);
+}
+.btn{
+  font-size: 24px;
+  width: 100px;
+  border: none;
+  background-color: rgb(230, 113, 113);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(224, 47, 47);
+  color: #fff;
+}
+.btnCancel{
+  background-color: rgb(134, 181, 34);
+}
+.btnCancel:hover{
+  background-color: rgb(101, 144, 9);
+  color: #fff;
+}

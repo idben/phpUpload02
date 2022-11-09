@@ -1,0 +1,15 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 800px;
+  margin-top: 50px;
+}
+.container .imgs img{
+  width: calc((800px - 22px) / 3);
+  vertical-align: top;
+}
+.container span{
+  word-wrap:break-word;
+}

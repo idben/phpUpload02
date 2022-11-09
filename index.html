@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/new.css" />
+    <script src="./js/new.js" defer></script>
+    <title>新增資料</title>
+  </head>
+
+  <body>
+    <h1>新增資料</h1>
+    <div class="container">
+      <form action="save.php" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <label for="roomName">房間名稱</label>
+          <input
+            type="text"
+            id="roomName"
+            name="roomName"
+            placeholder="房間名稱"
+          />
+        </div>
+        <div class="row">
+          <label for="roomDesc">房間描述</label>
+          <textarea
+            id="roomDesc"
+            name="roomDesc"
+            placeholder="房間描述"
+          ></textarea>
+        </div>
+        <div class="row">
+          <div class="up">
+            <label for="roomTag">tags</label>
+            <input
+              class="input2"
+              type="text"
+              id="roomTag"
+              name="roomTag"
+              placeholder="輸入完一組標籤後按右邊按鈕加入，點擊已加入標籤來刪除"
+            />
+            <span class="iconBtn iconBtnTag">
+              <i class="fa-solid fa-file-circle-plus"></i> 加入tag
+            </span>
+          </div>
+          <div class="down">
+            <div class="tags"></div>
+          </div>
+          <div>
+            <input type="hidden" id="roomTags" name="roomTags" />
+          </div>
+        </div>
+        <div class="roomImg">
+          <input type="hidden" id="fileTotalNum" name="fileTotalNum" />
+          <div class="row">
+            <label for="file0">房間照片1</label>
+            <input
+              class="input2"
+              type="file"
+              id="file0"
+              name="file0"
+              accept=".png,.jpg,.jpeg"
+            />
+            <span class="iconBtn iconBtnFileAdd">
+              <i class="fa-solid fa-file-circle-plus"></i> 增加照片
+            </span>
+          </div>
+        </div>
+
+        <div class="row row2">
+          <button class="btn btnSend" type="submit">送出</button>
+          <button class="btn btnCancel" type="button">取消</button>
+        </div>
+      </form>
+    </div>
+    <template id="inputFile">
+      <div class="row">
+        <label for="file0">房間照片1</label>
+        <input
+          class="input2"
+          type="file"
+          id="file0"
+          name="file0"
+          accept=".png,.jpg,.jpeg"
+        />
+        <span class="iconBtn iconBtn2 iconBtnFileRemove" index="1">
+          <i class="fa-solid fa-file-circle-plus"></i> 移除此欄
+        </span>
+      </div>
+    </template>
+  </body>
+</html>
